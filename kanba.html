@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>看吧</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+    <style type="text/css">
+    	.mui-kba .mui-content{
+			transform: translateY(0);
+ 			-webkit-transform: translateY(0); 
+		}
+		.mui-kba .mui-content{
+ 			padding-bottom: 52px;
+		}
+    </style>
+</head>
+<body class="news mui-kba">
+		<header class="hadnav">
+		    <h1 class="mui-title">看吧</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<p>
+					<img src="img/images/im01.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+				<h2 class="htitle">在这好天下生存</h2>
+				<p>这是图片放大预览示例，点击如下图片体验全屏预览功能</p>
+				<p>
+					<img src="img/images/im02.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+				<h2 class="htitle">瞎缝中的生命</h2>
+				<p>图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作，</p>
+				<p>
+					<img src="img/shuijiao.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+				<h2 class="htitle">偷懒的猫咪</h2>
+				<p>可爱的猫咪</p>
+			</div>
+		</div>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script src="js/kbinit.js"></script>
+	<script>
+		mui.previewImage();
+		
+		//B页面onload从服务器获取列表数据；
+		window.onload = function(){
+		  //从服务器获取数据
+		mui.plusReady(function(){
+             // 在这里调用plus api
+            var self = plus.webview.currentWebview();
+			var sid = self.id;
+			var version = self.version;
+			alert(sid);
+       });
+		  //业务数据获取完毕，并已插入当前页面DOM；
+		  //注意：若为ajax请求，则需将如下代码放在处理完ajax响应数据之后；
+		  mui.plusReady(function(){
+		    //关闭等待框
+		    plus.nativeUI.closeWaiting();
+		    //显示当前页面
+		    mui.currentWebview.show();
+		  });
+		}
+		$(function(){mDom.init(0);});
+	</script>
+	</body>
+</html>

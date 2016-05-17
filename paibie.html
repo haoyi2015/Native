@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>电影派</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+    <script src="js/flexible.js"></script>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body class="news">
+	<header class="hadnav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left back-icon"></a>
+	    <h1 class="mui-title">电影派</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-slider">
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/xlqt-bg.jpg" /></a></div>
+		  </div>
+		  <div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<ul class="mui-table-view mui-table-view-chevron dypai">
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img class="mui-media-object mui-pull-left" src="img/cbd.jpg">
+					<div class="mui-media-body">
+						CBD
+						<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class='mui-navigate-right' href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="img/yuantiao.jpg">
+					<div class="mui-media-body">
+						远眺
+						<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						<p class='mui-ellipsis m-time'>16/5/17</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script src="js/kbinit.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+			//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		$(function(){
+			$('.mui-control-content').height(document.body.scrollHeight+196);
+		});
+	</script>
+</body>
+</html>

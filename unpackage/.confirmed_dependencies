@@ -1,0 +1,92 @@
+{
+  "tieba.html": {
+    "href": "tieba.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/flexible.js",
+      "js/jquery-1.8.3.min.js",
+      "css/css.css",
+      "js/mui.js",
+      "js/mui.zoom.js",
+      "js/mui.previewimage.js",
+      "js/kbinit.js",
+      "img/yuantiao.jpg",
+      "img/muwu.jpg",
+      "img/shuijiao.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "liaoba.html": {
+    "href": "liaoba.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/flexible.js",
+      "js/jquery-1.8.3.min.js",
+      "css/css.css",
+      "js/mui.js",
+      "js/mui.zoom.js",
+      "js/mui.previewimage.js",
+      "js/kbinit.js",
+      "img/shuijiao.jpg",
+      "img/yuantiao.jpg",
+      "img/muwu.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "my.html": {
+    "href": "my.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/flexible.js",
+      "js/jquery-1.8.3.min.js",
+      "css/css.css",
+      "js/mui.js",
+      "js/kbinit.js",
+      "img/pic_logo_1082168b9.jpg",
+      "img/QR-code.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "kanba.html": {
+    "href": "kanba.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/flexible.js",
+      "js/jquery-1.8.3.min.js",
+      "css/css.css",
+      "js/mui.js",
+      "js/mui.zoom.js",
+      "js/mui.previewimage.js",
+      "js/kbinit.js",
+      "img/yuantiao.jpg",
+      "img/muwu.jpg",
+      "img/shuijiao.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/jquery-1.8.3.min.js",
+      "css/mui.min.css",
+      "js/flexible.js",
+      "css/css.css",
+      "js/mui.js",
+      "js/kbinit.js",
+      "img/yuantiao.jpg",
+      "img/cbd.jpg",
+      "img/shuijiao.jpg"
+    ],
+    "refer": [
+      "tieba.html",
+      "liaoba.html",
+      "my.html",
+      "kanba.html"
+    ],
+    "priority": 0
+  }
+}
